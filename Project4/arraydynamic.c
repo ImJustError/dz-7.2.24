@@ -41,12 +41,6 @@ void* memreAlloc(int size,int** array) {
 
 
 
-
-//методы фри добавить, реаллок в отдельную надо
-// написать вывод всего списка 
-// удаление с фри 
-
-
 int addNewEl(arrayDynamic* array, int element) {
 	int size = 0;
 	int** tmp = array->array;
@@ -108,9 +102,7 @@ int maxels(arrayDynamic array) {
 
 int Freearray(arrayDynamic array) {
 	int** tmp = array.array;
-	for (; *tmp != NULL; tmp++) {
-		free(*tmp);
-	}
+	for (; *tmp != NULL; tmp++)free(*tmp);
 	free(array.array);
 	return 0;
 }

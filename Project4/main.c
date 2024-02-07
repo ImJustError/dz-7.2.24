@@ -9,6 +9,11 @@ int main() {
 		addNewEl(&array, i);
 	}
 	addNewEl(&array, 2);
+	addNewEl(&array, 2);
+
+
+
+
 	deleteEls(&array, 2);
 	printList(array);
 	Freearray(array);
