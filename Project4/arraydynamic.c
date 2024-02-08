@@ -50,6 +50,7 @@ int addNewEl(arrayDynamic* array, int element) {
 	tmp = array->array;
 	for (int i=0; i<size; tmp++,i++);
 	*tmp = memAlloc(sizeof(int));
+	if (!*tmp)return;
 	**tmp = element;
 	tmp++;
 	*tmp = NULL;
