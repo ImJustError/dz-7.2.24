@@ -10,10 +10,8 @@ int main() {
 	}
 	addNewEl(&array, 2);
 	addNewEl(&array, 2);
-
-
-
-
+	printList(array);
+	printf("\n");
 	deleteEls(&array, 2);
 	printList(array);
 	Freearray(array);
